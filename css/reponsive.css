@@ -1,0 +1,114 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding-bottom: 50px;
+    }
+    .left-header h2 {
+        font-size: 20px;
+    }
+    .header .vn-col {
+        height: 90px;
+    }
+    .infor .vn-col {
+        flex-direction: column;
+    }
+    .vn-col {
+        max-width: 100%;
+        padding: 0px 15px;
+    }
+    .icon-user {
+        width: 55px;
+    }
+    .navigate {
+        width: 95%;
+    }
+    .infor img {
+        width: 100%;
+    }
+    .infor .vn-text {
+        margin: 30px 0px;
+    }
+    .fixed-left {
+        position: absolute;
+        top: 70%;
+    }
+    .timeline ul li:nth-child(even)>div,
+    .timeline ul li:nth-child(odd)>div {
+        left: 10px;
+    }
+    .timeline ul li>div {
+        width: 90%;
+    }
+    .list-project {
+        flex-direction: column;
+    }
+    .list-project .item {
+        margin: 10px 0px;
+        width: 100%;
+    }
+    .list-software {
+        width: 100%;
+    }
+    .software ul>li>img {
+        margin: 10px 15px;
+    }
+    .list-work .itemWork {
+        margin: 0px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .vn-col {
+        max-width: 100%;
+        padding: 0px 20px;
+    }
+    .navigate {
+        width: 94%;
+    }
+    .timeline ul li>div {
+        width: 94%;
+    }
+    .fixed-left {
+        top: 25%;
+        right: 40px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+@media screen and (max-width: 900px) {
+    .timeline ul {
+      margin: 0px;
+      width: 100%;
+    }
+    .timeline ul li {
+      background-color: transparent;
+      border-left: 2px solid var(--text-color);
+      width: 100%;
+    }
+    .timeline ul li::after {
+      left: 0px;
+    }
+    .timeline ul li:nth-child(even)>div {
+      left: 15px;
+    }
+  }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 900px) {
+    .vn-col {
+        max-width: 1150px;
+    }
+    .timeline ul li>div {
+        width: 400px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+}
