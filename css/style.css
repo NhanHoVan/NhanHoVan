@@ -1,6 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400&display=swap");
 
 :root {
+  --background-color: #2a2a2a;
+  --background-color-wave: #313131;
+  --header-color: ;
+  --button-color: ;
+  --button-hover-color: ;
+  --text-color: #ffffff;
+  --text-hover-color: #5c95fb;
+  --content-top: url("../img/svg/wave-top-dark.svg");
+  --content-bottom: url("../img/svg/wave-bottom-dark.svg");
+}
+
+[data-theme="light"] {
   --background-color: #ffffff;
   --background-color-wave: #6ea7a9;
   --header-color: ;
@@ -12,17 +24,6 @@
   --content-bottom: url("../img/svg/wave-bottom-light.svg");
 }
 
-[data-theme="dark"] {
-  --background-color: #2a2a2a;
-  --background-color-wave: #313131;
-  --header-color: ;
-  --button-color: ;
-  --button-hover-color: ;
-  --text-color: #ffffff;
-  --text-hover-color: #5c95fb;
-  --content-top: url("../img/svg/wave-top-dark.svg");
-  --content-bottom: url("../img/svg/wave-bottom-dark.svg");
-}
 body {
   margin: 0px;
   background-color: var(--background-color);
