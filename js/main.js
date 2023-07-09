@@ -54,16 +54,16 @@
   const currentTheme = localStorage.getItem("theme");
 
   function setText(e) {
-    let text = "&#127774;";
-    if (e === "dark") {
-      text = "&#127769;";
+    let text = "&#127769;";
+    if (e === "light") {
+      text = "&#127774;";
     }
     getElement("toggle-text", "id").innerHTML = text;
   }
 
   if (currentTheme) {
     ELEMENT.setAttribute("data-theme", currentTheme);
-    if (currentTheme === "dark") {
+    if (currentTheme === "light") {
       toggleSwitch.checked = true;
       setText(currentTheme);
     }
@@ -71,34 +71,17 @@
 
   function switchTheme(e) {
     if (e.target.checked) {
-      ELEMENT.setAttribute("data-theme", "dark");
-      localStorage.setItem("theme", "dark");
-      setText("dark");
-    } else {
       ELEMENT.setAttribute("data-theme", "light");
       localStorage.setItem("theme", "light");
       setText("light");
+    } else {
+      ELEMENT.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
+      setText("dark");
     }
   }
 
   toggleSwitch.addEventListener("change", switchTheme, false);
-
-  /**
-   * Request Ajax get component file
-   */
-  function requestGetHtml(nameFile) {
-    var xhr =
-      typeof XMLHttpRequest != "undefined"
-        ? new XMLHttpRequest()
-        : new ActiveXObject("Microsoft.XMLHTTP");
-    xhr.open("get", "./component/" + nameFile + ".html", true);
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState == 4 && xhr.status == 200) {
-        getElement("import-content", "id").innerHTML = xhr.responseText;
-      }
-    };
-    xhr.send();
-  }
 
   /**
    * Slide show work
