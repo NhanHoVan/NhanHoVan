@@ -39,9 +39,11 @@
     .timeline ul li>div {
         width: 90%;
     }
+    .list-slide,
     .list-project {
         flex-direction: column;
     }
+    .list-slide .item,
     .list-project .item {
         margin: 10px 0px;
         width: 100%;
